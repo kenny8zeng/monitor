@@ -1,16 +1,20 @@
 #ifndef __core_h_fer4r34r3fkjwij2yt6tbhbhnurfj__
 #define __core_h_fer4r34r3fkjwij2yt6tbhbhnurfj__
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#include "base.hpp"
+#include "tinbom.hpp"
 
+namespace nsTinbom
+{
 	//////////////////////////////////////////////////////////////////////////////////////
-	void test( void );
+	struct tnode
+	{
+		netid_t 	*netid;
 
-#ifdef __cplusplus
-}
-#endif
+		struct tport< tnode >* ports[ MAX_CHILD ];
+	};
+
+} //namespace nsTinbom
 
 #endif //__core_h_fer4r34r3fkjwij2yt6tbhbhnurfj__
 
